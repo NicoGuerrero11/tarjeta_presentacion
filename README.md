@@ -1,12 +1,28 @@
-# React + Vite
+# 🪪 Tarjeta de Presentación - React + Chakra UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web sencilla construida con **React** y **Chakra UI** que muestra una serie de tarjetas de presentación personalizadas. Cada tarjeta contiene una imagen, el nombre de la persona y una breve descripción.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tecnologías utilizadas
+
+- ⚛️ **React** (Vite)
+- 💅 **Chakra UI** (v2.7.1)
+- 🎨 Estilos responsive usando `SimpleGrid` y `Box`
+- 📦 Gestión de paquetes con **npm**
+
+---
+
+## 🧠 Conceptos aplicados
+
+- Componentes funcionales en React
+- Prop drilling (`props`) para pasar datos entre componentes
+- Renderizado dinámico con `.map()`
+- Diseño responsive con Chakra UI
+- Organización modular de componentes
+- Buenas prácticas con separación lógica y visual
+
+---
+

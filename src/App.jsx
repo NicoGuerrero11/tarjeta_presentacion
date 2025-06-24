@@ -1,50 +1,48 @@
 import React from 'react';
 import Card from './components/Card.jsx';
+import { Box, Heading, SimpleGrid } from '@chakra-ui/react';
 
 const persons = [
     {
         name: "nicolas",
-        image: "nicolas.png",
-        description: "web development"
+        image: "https://via.placeholder.com/150",
+        description: "web development",
     },
     {
         name: "gabriela",
-        image: "gabriela.png",
-        description: "student"
+        image: "https://via.placeholder.com/150",
+        description: "student",
     },
     {
         name: "Agustina",
-        image: "agus.png",
-        description: "student"
+        image: "https://via.placeholder.com/150",
+        description: "student",
     },
     {
         name: "Marcelo",
-        image: "marce.png",
-        description: "business"
+        image: "https://via.placeholder.com/150",
+        description: "business",
     },
     {
         name: "Maritza",
-        image: "mar.png",
-        description: "loving god"
+        image: "https://via.placeholder.com/150",
+        description: "loving god",
     },
 
 ];
 
 const App = () => {
     return(
-        <div className="min-h-screen bg-gray-100 p-6">
-            <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Presentation Card</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+        <Box minH="100vh" bg="gray.50" py="10" px="6">
+            <Heading textAlign="center" color="purple.600" mb="8">
+                Presentation Card
+            </Heading>
+            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing="6">
                 {persons.map((person, index) => (
-                    <Card
-                        key ={index}
-                        name={person.name}
-                        image={person.image}
-                        description={person.description}
-                    />
+                    <Card key={index} {...person} />
                 ))}
-            </div>
-        </div>
+            </SimpleGrid>
+        </Box>
     )
 };
 
